@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-.heading {
+header {
   width: 100%;
   background-color: #FF9A4B;
   height: 50px;
 }
 
-.box {
+main {
   margin: 50px auto;
   width: 960px;
   display: flex;
@@ -61,7 +61,26 @@
   margin: 15px 0 5px;
 }
 
-.footing {
+footer {
+  width: 100%;
   height: 50px;
   background-color: #aaa;
+}
+
+@media screen and (max-width:425px) {
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .box-list {
+    width: 90%;
+    margin: 0 5% 20px 5%;
+  }
+
+  .box-list:last-child {
+    margin-bottom: 0;
+    margin-right: 5%;
+  }
+
 }
